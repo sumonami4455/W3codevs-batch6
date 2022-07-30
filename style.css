@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* font-family: 'Open Sans', sans-serif ;
+  font-family: 'Poppins', sans-serif ; */
+
+  /* ======== Defaulf Css Start====== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif ;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-full{
+  width: 100%;
+}
+.container::before,
+.container::after,
+.container-full::before,
+.container-full::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.col-50{
+  width: 50%;
+  float: left;
+  padding: 0 25px;
+}
+.col-33{
+  width: 33.33%;
+  float: left;
+  padding: 0 25px;
+}
+.col-25{
+  width: 25%;
+  float: left;
+  padding: 0 25px;
+}
+.col-30{
+  width: 30%;
+  float: left;
+  padding: 0 25px;
+}
+.col-70{
+  width: 70%;
+  float: left;
+  padding: 0 25px;
+}
+.col-100{
+  width: 100%;
+  float: left;
+  padding: 0 25px;
+}
+.section-padding{
+  padding: 120px 0 120px 0;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+.professional.section-padding{
+  padding-bottom: 90px;
+}
+ /* ======== Defaulf Css  End====== */
+ /* ======== top header Css  start====== */
+.top-header{
+  background: #1d1d1d;
+  padding: 10px 0px;
+}
+.number{
+  font-size: 14px;
+  color: #B6B6B6;
+  font-weight: 300;
+  transition: all 0.10s;
+}
+.number:hover{
+  text-decoration: underline;
+  color: red;
+}
+.social{
+  display: inline-block;
+  margin-left: 30px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  transition: all 0.5s;
+}
+.social li{
+  display: inline-block;
+  font-size: 14px;
+  color: #B6B6B6;
+  margin:0px 4px;
+}
+.social a:hover li{
+  text-decoration: underline;
+  color: red;
+}
+.login-register{
+  float: right;
+}
+.login-register a{
+  color: #B6B6B6;
+  font-size: 14px;
+  font-weight: 300;
+}
+.login-register i{
+  margin: 0 10px;
+}
+.login-register a:hover{
+  color: red;
+  text-decoration: underline;
+}
+ /* ======== top header Css  end====== */
+ /* ========  header Css  start====== */
+header{
+  background: #fff;
+  padding: 25px 0;
+}
+.logo img{
+  width: 170px;
+  padding: 3px 0;
+}
+.main-menu{
+  float: right;
+}
+.main-menu li{
+  display: inline-block;
+  margin-top: 5px;
+}
+.main-menu li a{
+  text-transform: capitalize;
+  color: #252525;
+  font-weight: 600;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif ; 
+  transition: 0.5s;
+  border-bottom: 2px solid transparent;
+  margin-left: 35px;
+}
+.menu-icon{
+  margin-left: 5px !important;
+  padding: 0 10px !important;
+}
+.active{
+  border-bottom: 2px solid #FF1949 !important;
+}
+.main-menu li a:hover {
+  border-bottom: 2px solid #FF1949 ;
+}
+.menu-icon:hover{
+  color: #FF1949;
+  border-bottom: 0px solid transparent !important;
+}
+ /* ========  header Css  end====== */
+ /* ========  Home Css  Start====== */
+
+.home{
+  background: url('img/01.jpg') center center/cover;
+  padding: 170px 0px;
+  color: #fff;
+}
+.home h1{
+  font-size: 92px;
+  font-weight: 700;
+  text-transform: capitalize;
+  position: relative;
+}
+.home h1::before{
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 80px;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+}
+.home p{
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 300;
+  padding: 40px 0;
+}
+.btn{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 20px 40px;
+  border: 2px solid #fff;
+  display: inline-block;
+  margin-right: 15px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  transition: 0.3s;
+  margin-top: 20px;
+  transition: 0.3s;
+  transition: all 0.2s;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+.btn-active{
+  background: #FF1949;
+  border: 2px solid #e2204a;
+}
+.btn i{
+  visibility: hidden;
+}
+.btn:hover i{
+  visibility: visible;
+}
+.btn:hover{
+  transform: scale(1.2,1.1);
+}
+ /* ========  Home Css  End====== */
+ /* ========  Courses Css  start====== */
+.course-menu{
+  padding-bottom: 40px;
+}
+.course-menu li{
+  display: inline-block;
+  margin-right: 27px;
+  color: #252525;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.course-active-arrow i{
+  color: #e2204a;
+}
+.course-arrow i{
+  visibility: hidden;
+  transition: 0.3s;
+}
+.course-arrow:hover i{
+ visibility: visible;
+ color: #e2204a;
+}
+.course-img{
+  position: relative;
+  overflow: hidden;
+}
+.course-img img{
+  width: 100%;
+  transition: 0.7s;
+}
+.course-img .certificate{
+  background: red;
+  padding: 12px 30px;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 3px;
+  color: #fff;
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  transition: 0.3s;
+}
+.course-img .certificate:hover{
+  background: #333;
+  text-decoration: underline;
+}
+.course-details h3{
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+.course-details h3 a:hover{
+  text-decoration: underline;
+  color:#FF1949 !important;
+}
+.course-details h3 a{
+  color: #252525;
+}
+.course-details .instructor{
+  font-size: 15px;
+  color: #252525;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.course-details p{
+  margin: 50px 0px 25px 0px;
+  color: #444;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif ;
+  text-align: justify;
+  font-size: 15px;
+  position: relative;
+} 
+.course-details p::before{
+  content: '';
+  position: absolute;
+  background: #FF1949;
+  width: 40px;
+  height: 3px;
+  left: 0;
+  top: -25px;
+  transition: 0.5s;
+}
+.course-footer a {
+  margin-right: 15px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.course-fee{
+  float: right;
+  color: #FF1949;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  text-transform: capitalize;
+}
+.courses-box:hover img{
+  transform: scale(1.1);
+}
+.courses-box:hover .course-details p::before{
+  width: 60px;
+}
+ /* ========  Courses Css  End====== */
+ /* ========  Expart area  Start====== */
+ .expart .col-50{
+   padding: 0;
+ }
+.expart-box{
+  width: 100%;
+  height: 420px;
+}
+.expart-content-01 {
+  background: #FF1949;
+  color: #fff;
+}
+.expart-content-01 h3{
+  padding: 110px 110px 30px 110px;
+  font-size: 45px;
+  font-weight: 700;
+}
+.expart-content-01 a{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.3s;
+  margin-left: 110px;
+}
+.expart-content-01 a:hover{
+  text-decoration: underline;
+}
+.expart-content-02{
+  background: url('img/expart-02.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.expart-content-03{
+  background: url('img/expart-03.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.expart-content-04{
+  background: #ddd;
+}
+.expart-content-04 h3{
+  padding: 110px 110px 30px 110px;
+  font-size: 43px;
+  font-weight: 700;
+  color: #252525;
+  text-transform: capitalize;
+}
+.expart-content-04 a{
+  font-size: 17px;
+  font-weight: 500;
+  color: #252525;
+  margin-left: 110px;
+}
+.expart-content-04 a:hover{
+  text-decoration: underline;
+}
+/* ========  Expart area  Ends====== */
+
+/* ========  Profression area  Start====== */
+.profession-title h2{
+  font-size: 45px;
+  font-weight: 700;
+  color: #252525;
+}
+.profession-title p{
+  color: #333;
+  font-size: 19px;
+  font-weight: 300;
+  margin: 60px 0 80px 0;
+  position: relative;
+}
+.profession-title p::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -30px;
+  width: 50px;
+  height: 2px;
+  background: #FF1949;
+}
+.teachers-single{
+  display: flex;
+}
+.teachers-single-right{
+  padding: 30px;
+}
+.teachers-single-left img{
+  width: 140x;
+  height: 135px;
+}
+.teachers-single-right ul li{
+  display: inline-block;
+}
+.teachers-single-right h3{
+  font-size: 20px;
+  font-weight: 700;
+}
+.teachers-single-right span{
+  font-size: 15px;
+  font-weight: 400;
+  margin: 10px 0 10px 0;
+  display: inline-block;
+}
+.teachers-single-right ul li i{
+  font-size: 13px;
+  margin-right: 5px;
+}
+ /* ========  Profression area  Ends====== */
+ /* ========  Review area  Start====== */
+.review{
+  background: #FF1949;
+}
+.review-single{
+  display: flex;
+  position: relative;
+
+}
+.review-single::before{
+  content:"\f10e";
+  position: absolute;
+  right: 0;
+  top: -100px;
+  font-weight: 900;
+  font: var(--fa-font-solid );
+  color: var(--fa-font-color, black );
+  font-weight: var(--fa-font-font-weight, 900);
+  font-size: var(--fa-font-font-size, 300px);
+  opacity: var(--fa-font-opacity, 0.2);
+}
+.review-content{
+  margin-left: 20px;
+  margin-top: -10px;
+}
+.review-content p{
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 54px;
+}
+.review-content span{
+  font-size: 19px;
+  color: #fff;
+}
+ /* ========  Review area  Ends====== */
+ /* ========  tour area  start====== */
+.tour-title h2{
+  font-size: 45px;
+  color: #252525;
+  font-weight: 700;
+  position: relative;
+}
+.tour-title h2::after{
+  content: '';
+  position: absolute;
+  background: #FF1949;
+  width: 50px;
+  height: 3px;
+  left: 0;
+  bottom: -27px;
+}
+.tour-title p{
+  font-size: 19px;
+  font-weight: 300;
+  color: #333;
+  margin: 55px 0 40px 0;
+}
+.tour-list li{
+  font-size: 15px;
+  font-weight: 400;
+ ;
+}
+.tour-list li i{
+  color: #FF1949;
+}
+ /* ========  tour area  ends====== */
+ /* ========  Form area  Start====== */
+.form{
+  background: url('img/form/01.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.form .col-50{
+  padding: 0;
+}
+.form::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #252525;
+  top: 0;
+  opacity: .2;
+  z-index: -1;
+}
+.form-left{
+  background: #FF1949;
+  color: #fff;
+  padding: 150px 62px;
+  margin-left: 100px;
+}
+.form-left h3{
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 54px;
+}
+.form-right{
+  background: #fff;
+  padding: 71px 85px;
+  margin-right: 100px;
+  position: relative;
+}
+.form-right i {
+  position: absolute;
+  left: -13px;
+  top: 50%;
+  font-size: 45px;
+  color: #fff;
+}
+.form-right h4{
+  font-size: 28px;
+  font-weight: 700;
+  color: #252525;
+  margin-bottom: 15px;
+}
+.form-right input{
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.form-right input[type="submit"]{
+  width: 150px;
+  background: #252525;
+  color: #fff;
+  border-radius: 5px;
+  padding: 15px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+ /* ========  Form area  end====== */
+
+ /* ========  Footer area  Start====== */
+ .footer{
+   background: #252525;
+   color: #fff;
+ }
+ .footer-single a{
+   color: #fff;
+   font-size: 15px;
+   transform: 0.3s;
+   padding-bottom:10px ;
+   display: inline-block;
+ }
+ .footer-single a:hover{
+   text-decoration: underline;
+   color: #FF1949;
+ }
+ .footer-single h5{
+   font-size: 20px;
+   font-weight: 700;
+   margin-bottom: 15px;
+ }
+.footer-single p{
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+.footer-course h4 a{
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0;
+}
+.footer-course .footer-ins{
+  font-size: 14px;
+  font-weight: 400;
+  
+}
+.footer-support {
+  display: inllne;
+}
+.footer-img h5{
+  margin-bottom: 35px;
+  display: inline-block;
+}
+.copyright{
+  background: #1d1d1d;
+  color: #fff;
+  margin-top: 100px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+}
+.copyright-left {
+  font-size: 14px;
+  font-weight: 300;
+  color: #e1e1e1;
+}
+.copyright-left a{
+  color: #e1e1e1;
+  transition: 0.3s;
+}
+.copyright-left a:hover{
+  text-decoration: underline;
+  color: #FF1949;
+}
+.copyright-left span:hover{
+  text-decoration: underline;
+}
+.footer.section-padding{
+  padding-bottom: 0;
+}
+.copyright-right{
+  float: right;
+}
+.copyright-right a{
+  color: #e1e1e1;
+  font-size: 14px;
+  font-weight: 300;
+}
+.copyright-right a:hover{
+  text-decoration: underline;
+}
+.copyright-right ul{
+  display: inline-block;
+  padding-left: 25px;
+}
+.copyright-right ul li{
+  display: inline-block;
+  padding-left: 10px;
+  color: #e1e1e1;
+  font-size: 14px;
+}
+.copyright-right .footer-follow:hover{
+  text-decoration: underline;
+}
